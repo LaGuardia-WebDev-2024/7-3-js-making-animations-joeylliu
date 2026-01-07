@@ -4,27 +4,35 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var sunSize = 30; 
+// position of sun
+    var sunSize = 30;
 
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){
   noStroke(); 
-  
-  // the beautiful blue sky
-  background(82, 222, 240);
-    
-  // The sun, a little circle on the horizon
-  fill(255, 204, 0);
-  ellipse(200, 298, sunSize, sunSize);
 
-  // The land, blocking half of the sun
-  fill(76, 168, 67);
-  rect(0, 300, 400, 100);
+  draw = function() {
+
+    // all lines of code here will all run repeatedly
+
+    // the beautiful blue sky
+    background(102, 552, 221);
+    
+    // The sun, a little circle on the horizon
+    fill(255, 204, 0);
+    ellipse(200, 298, sunSize, sunSize);
+
+    // The land, blocking half of the sun
+    fill(76, 168, 67);
+    rect(0, 300, 400, 100);
   
-  //ladybug
-  fill(200,0,0);
-  ellipse(10, 350, 10, 10);
+    //ladybug
+    fill(200,0,0);
+    ellipse(10, 350, 10, 10);
+
+    sunSize = sunSize + 1;
+  };
 }
 
 
